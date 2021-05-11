@@ -31,7 +31,7 @@ const User=()=>{
                         user_login:data.login,
                         repos:data.public_repos,
                         followers:data.followers,
-                        following:data.following
+                        following:data.following,
                     });
                 }
             });
@@ -46,7 +46,7 @@ const User=()=>{
                     <h3>public repositories:{this.state.repos}</h3>
                     <h3>followers:{this.state.followers}</h3>
                     <h3>followering:{this.state.following}</h3>
-                    <a herf={this.state.githubUrl}>Github Link</a>
+                    <a href={this.state.githubUrl}>Github Link</a>
                 </div>
             );
         }
